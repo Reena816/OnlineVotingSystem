@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cast Your Vote</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="vote-container">
+        <h2>Select Candidate</h2>
+        <form id="voteForm">
+            <input type="number" id="voterId" placeholder="Your Voter ID" required><br><br>
+
+            <div class="candidate-list" id="candidateList">
+                <!-- Candidates with symbols will be inserted here -->
+            </div>
+
+            <br>
+            <button type="submit" class="vote-btn">Submit Vote</button>
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <!-- Optional Success Modal -->
+    <div class="modal" id="voteSuccessModal" style="display:none;">
+        <div class="modal-content">
+            <p>✅ Your vote has been cast successfully!</p>
+            <button onclick="window.location.href='result.html'">See Results</button>
+        </div>
+    </div>
+    
+    
+
+
+    <script src="vote.js"></script>
+</body>
+</html>
